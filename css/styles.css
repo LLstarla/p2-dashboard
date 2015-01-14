@@ -1,12 +1,12 @@
 /* Section Stylings */
 
 body {
-	background: url("../img/bg2.png");
+	background: url("../img/bg3.png");
 	background-size: 5%;
 }
 
 header {
-	background: url("../img/bg3-2.png") repeat;
+	background: url("../img/bg1.png") repeat;
 	background-size: 5%;
 	max-width: 100%;
 	margin: 0;
@@ -21,7 +21,7 @@ section {margin: 20px 0 20px 0;}
 
 h1 {
 	font-family: 'Pacifico', cursive;
-	color: #9e1030;
+	color: #b54727;
 	font-size: 4em;
 	margin: 0px;
 }
@@ -30,14 +30,14 @@ h2 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
 	color: #fff;
-	font-size: 3em;
+	font-size: 3.1em;
 	margin: 0px;
 }
 
 h3 {
 	font-family: 'Quattrocento Sans', sans-serif;
-	color: #b54727;
-	font-size: 2.5em;
+	color: #9e1030;
+	font-size: 2em;
 	margin: 0px;
 }
 
@@ -50,9 +50,7 @@ p {
 	margin: 10px;
 }
 
-section > p {color: #2b2525;}
-
-section > p + p {color: #b54727;}
+section p {color: #2b2525;}
 
 
 /* Nav Styling */
@@ -70,18 +68,16 @@ nav ul li a:link, nav ul li a:visited {
 	font-weight: 800;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #fff;
 	font-size: 1.3em;
 	padding: 5px;
 	border: 20px;
 	margin-right: 5px;
 	margin-left: 5px;
-}
-
-nav ul li a:hover { 
 	color: #b9947f;
 	text-shadow: 0 0 7px #2b2525;
-} 
+}
+
+nav ul li a:hover {color: #fff;} 
 
 ul li {
 	list-style: none;
@@ -91,54 +87,38 @@ ul li {
 
 
 /* Tile Styles */
-.color-0,
+
 .color-1,
 .color-2,
 .color-3,
 .color-4,
-.color-5,
-.color-6,
-.color-7,
-.color-8,
-.color-9,
-.color-10 {
+.color-5 {
 	border: 1px solid #000;
 	float: left;
 	margin: 10px;
 	height: 50px;
-	width: 50px;
-}
+	width: 50px;}
 
 .pattern-1,
 .pattern-2,
-.pattern-3,
-.pattern-4,
-.pattern-5,
-.pattern-6,
-.pattern-7,
-.pattern-8,
-.pattern-9,
-.pattern-10,
-.pattern-11,
-.pattern-12 {
+.pattern-3 {
 	border: 1px solid #000;
 	float: left;
 	margin: 20px;
 	height: 110px;
-	width: 110px;
-}
+	width: 110px;}
 
-.color-0{background: #9e1030;}
-.color-1{background: #b54727;}
-.color-2{background: #2b2525;}
-.color-3{background: #9a7c61;}
-.color-4{background: #b9947f;}
-.color-5{background: #cc8455;}
-.color-8{background: #567d6a;}
+.color-1{background: #9e1030;}
+.color-2{background: #b54727;}
+.color-3{background: #2b2525;}
+.color-4{background: #9a7c61;}
+.color-5{background: #567d6a;}
 
-.pattern-1 {background: url("../img/bg3-2.png");}
+.pattern-1 {background: url("../img/bg1.png");}
 
 .pattern-2 {background: url("../img/bg2.png");}
+
+.pattern-3 {background: url("../img/bg3.png");}
 
 /* Show Grid */
 
