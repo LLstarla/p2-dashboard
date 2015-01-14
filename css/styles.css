@@ -1,13 +1,23 @@
+/* Section Stylings */
+
 body {
 	background: url("../img/bg2.png");
 	background-size: 5%;
-	
 }
 
-em {
-	color: #2b2525;
+header {
+	background: url("../img/bg3-2.png") repeat;
+	background-size: 5%;
+	max-width: 100%;
+	margin: 0;
 }
-/*Primary Header*/
+
+em {color: #2b2525;}
+
+section {margin: 20px 0 20px 0;}
+
+
+/* Heading Stylings */
 
 h1 {
 	font-family: 'Pacifico', cursive;
@@ -31,24 +41,23 @@ h3 {
 	margin: 0px;
 }
 
-/*Body copy*/
+
+/* Body Copy Stylings*/
+
 p {
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 1.25em;
 	margin: 10px;
-
 }
 
-header {
-	background: url("../img/bg3-2.png") repeat;
-	background-size: 5%;
-	max-width: 100%;
-	margin: 0;
-}
+section > p {color: #2b2525;}
 
-nav {
-	text-align: center;
-}
+section > p + p {color: #b54727;}
+
+
+/* Nav Styling */
+
+nav {text-align: center;}
 
 nav ul {
 	margin-top: 0px;
@@ -81,29 +90,7 @@ ul li {
 }
 
 
-
-
-/* Layout for Style Tile*/
-
-section {
-	margin: 20px 0 20px 0;
-}
-
-section > p {
-	color: #2b2525;
-}
-
-section > p + p {
-	color: #b54727;
-}
-
-
-
-
-
-
-
-
+/* Tile Styles */
 .color-0,
 .color-1,
 .color-2,
@@ -122,7 +109,6 @@ section > p + p {
 	width: 50px;
 }
 
-
 .pattern-1,
 .pattern-2,
 .pattern-3,
@@ -134,21 +120,13 @@ section > p + p {
 .pattern-9,
 .pattern-10,
 .pattern-11,
-.pattern-12
-{
+.pattern-12 {
 	border: 1px solid #000;
 	float: left;
 	margin: 20px;
 	height: 110px;
 	width: 110px;
 }
-
-
-/* Show Grid */
-.showgrid {
-	background: url("../img/grid-bg.png") repeat-y;
-}
-
 
 .color-0{background: #9e1030;}
 .color-1{background: #b54727;}
@@ -158,13 +136,10 @@ section > p + p {
 .color-5{background: #cc8455;}
 .color-8{background: #567d6a;}
 
-.pattern-1 {
-	background: url("../img/bg3-2.png");
-}
-.pattern-2 {
-	background: url("../img/bg2.png");
+.pattern-1 {background: url("../img/bg3-2.png");}
 
-}
-.pattern-3 {
-	background: url("../img/bg2.png");
-}
+.pattern-2 {background: url("../img/bg2.png");}
+
+/* Show Grid */
+
+.showgrid {background: url("../img/grid-bg.png") repeat-y;}
