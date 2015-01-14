@@ -4,13 +4,13 @@ body {
 }
 
 em {
-	color: #ab2b45;
+	color: #2b2525;
 }
 /*Primary Header*/
+
 h1 {
 	font-family: 'Laila', serif;
-	
-	color: #ab2b45;
+	color: #9e1030;
 	font-size: 4em;
 	margin: 0px;
 }
@@ -24,7 +24,7 @@ h2 {
 
 h3 {
 	font-family: 'Questrial', sans-serif;
-	color: #fff;
+	color: #b54727;
 	font-size: 2.5em;
 	margin: 0px;
 }
@@ -40,11 +40,15 @@ p {
 nav {
 	text-align: center;
 	float: center;
+	background: url("../img/bg3-2.png");
+	/*background-color: #b9947f;*/
+
 }
 
 nav ul {
 	margin-top: 40px;
 	margin-bottom: 70px;
+	padding: 7px;
 }
 
 nav ul li a:link, nav ul li a:visited {
@@ -53,17 +57,16 @@ nav ul li a:link, nav ul li a:visited {
 	list-style: none;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #204449;
+	color: #fff;
+
 	font-size: 1.75em;
-	padding: 60px;
-	border: 2px;
+	padding: 10px;
+	border: 10px;
 }
 
 nav ul li a:hover { 
-	color: #B9EFEF;
-	background: url("../img/WClink2.png") no-repeat;
-	background-size: 90%;
-	background-position: center;
+	
+	color: #b54727
 } 
 
 ul li {
@@ -76,15 +79,6 @@ ul li {
 
 
 /* Layout for Style Tile*/
-/*section {
-	margin: 20px 0;
-}*/
-
-.logo img {
-	max-width: 400px;
-	margin: 10px;
-	float: left;
-}
 
 section {
 
@@ -92,15 +86,11 @@ section {
 }
 
 section > p {
-	color: #fff;
-}
-
-section > p + p {
 	color: #2b2525;
 }
 
-section > p + p + p {
-	color: #d24324;
+section > p + p {
+	color: #b54727;
 }
 
 
@@ -110,6 +100,7 @@ section > p + p + p {
 
 
 
+.color-0,
 .color-1,
 .color-2,
 .color-3,
@@ -154,20 +145,20 @@ section > p + p + p {
 	background: url("../img/grid-bg.png") repeat-y;
 }
 
-.color-1{background: #d24324;}
+
+.color-0{background: #9e1030;}
+.color-1{background: #b54727;}
 .color-2{background: #2b2525;}
 .color-3{background: #9a7c61;}
 .color-4{background: #b9947f;}
 .color-5{background: #cc8455;}
-.color-6{background: #115e72;}
-.color-7{background: #7bada7;}
 .color-8{background: #567d6a;}
 
 .pattern-1 {
-	background: url("../img/bg1.png");
+	background: url("../img/bg3-2.png");
 }
 .pattern-2 {
-	background: url("../img/bg1-2.png");
+	background: url("../img/bg2.png");
 
 }
 .pattern-3 {
