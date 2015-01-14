@@ -1,5 +1,6 @@
 body {
-	background: url("../img/bg2.png") ;
+	background: url("../img/bg2.png");
+	background-size: 5%;
 	
 }
 
@@ -9,21 +10,22 @@ em {
 /*Primary Header*/
 
 h1 {
-	font-family: 'Laila', serif;
+	font-family: 'Pacifico', cursive;
 	color: #9e1030;
 	font-size: 4em;
 	margin: 0px;
 }
 
 h2 {
-	font-family: 'Questrial', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
 	color: #fff;
 	font-size: 3em;
 	margin: 0px;
 }
 
 h3 {
-	font-family: 'Questrial', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 	color: #b54727;
 	font-size: 2.5em;
 	margin: 0px;
@@ -37,42 +39,45 @@ p {
 
 }
 
+header {
+	background: url("../img/bg3-2.png") repeat;
+	background-size: 5%;
+	max-width: 100%;
+	margin: 0;
+}
+
 nav {
 	text-align: center;
-	float: center;
-	background: url("../img/bg3-2.png");
-	/*background-color: #b9947f;*/
-
 }
 
 nav ul {
-	margin-top: 40px;
-	margin-bottom: 70px;
-	padding: 7px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding: 15px;
 }
 
 nav ul li a:link, nav ul li a:visited {
 	font-family: 'Questrial', sans-serif;
 	font-weight: 800;
-	list-style: none;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fff;
-
-	font-size: 1.75em;
-	padding: 10px;
-	border: 10px;
+	font-size: 1.3em;
+	padding: 5px;
+	border: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
 }
 
 nav ul li a:hover { 
-	
-	color: #b54727
+	color: #b9947f;
+	text-shadow: 0 0 7px #2b2525;
 } 
 
 ul li {
-	text-decoration: none;
 	list-style: none;
 	display: inline;
+	letter-spacing: 2px;
 }
 
 
@@ -81,7 +86,6 @@ ul li {
 /* Layout for Style Tile*/
 
 section {
-
 	margin: 20px 0 20px 0;
 }
 
