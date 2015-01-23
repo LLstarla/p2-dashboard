@@ -103,7 +103,7 @@
 /* Header */
 
 .ui.accordion .ui.header .dropdown.icon {
-  font-size: 1em;
+  font-size: 1.25em;
   margin: 0em 0.25rem 0em 0rem;
 }
 
@@ -3438,7 +3438,7 @@
   display: block;
   width: 290px;
   min-height: 0px;
-  background: #ffffff;
+  background-color: #d6b69a;
   padding: 0em;
   border: none;
   border-radius: 0.2857rem;
