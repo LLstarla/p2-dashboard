@@ -1,3 +1,39 @@
+/*General Styling*/
+
+.bg3 {
+	background: url('../style-tile/img/bg3.png');
+}
+
+h1 {
+	font-family: 'Pacifico', cursive;
+	color: #b54727;
+	font-size: 4em;
+	margin: 0px;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: #b54727;
+	font-size: 1.3em;
+	margin: 0px;
+}
+
+h3 {
+	font-family: 'Quattrocento Sans', sans-serif;
+	color: #9e1030;
+	font-size: 2em;
+	margin: 0px;
+}
+
+p {
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 1.25em;
+	margin: 10px;
+	color: #2b2525;
+}
+
+
 
 
 /*Canvas*/
@@ -31,51 +67,18 @@
 	color: #b54727;
 }
 
-
-
-
-
-
-
-
-
-
-
-h1 {
-	font-family: 'Pacifico', cursive;
-	color: #b54727;
-	font-size: 4em;
-	margin: 0px;
-}
-
-h2 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	color: #b54727;
-	font-size: 1.3em;
-	margin: 0px;
-}
-
 .header h2:hover {
 	color: #fff;
 }
 
-h3 {
-	font-family: 'Quattrocento Sans', sans-serif;
-	color: #9e1030;
-	font-size: 2em;
-	margin: 0px;
-}
 
 
 
 
-p {
-	font-family: 'Quattrocento Sans', sans-serif;
-	font-size: 1.25em;
-	margin: 10px;
-	color: #2b2525;
-}
+
+
+
+
 
 
 
