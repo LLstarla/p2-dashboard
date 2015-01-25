@@ -1,0 +1,25 @@
+$blue1=#568EDA
+.zenlogic
+  font-size 20px
+
+.zenlogic-sidebar
+  select
+    color #333
+    padding 2px 5px
+  width 300px
+  .tabs
+    > .item
+      width 150px
+      font-size 16px
+      .icon
+        //font-size 28px
+  .menu
+    margin 0
+    border-radius 0
+
+
+.ui.menu.zenlogic-menu
+  > .item
+    background-color $blue1
+    &:hover
+      background-color $blue1

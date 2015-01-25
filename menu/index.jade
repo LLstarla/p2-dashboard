@@ -1,0 +1,74 @@
+.zenlogic-sidebar(ng-app="portal",ng-controller="MainCtrl as ctrl")
+  //p {{ctrl.cpanels}}
+  //select(ng-model="ctrl.currentCpanel" ng-options="cpanel.code as cpanel.name for cpanel in ctrl.cpanels")
+  .ui.labeled.icon.menu.horizontal.tabs.inverted2
+    a.blue.item(href="#",ng-click="ctrl.tabIndex = 1",ng-class="{active: ctrl.tabIndex == 1}")
+      i.setting.icon
+      | Contracts
+    a.purple.item(href="#",ng-click="ctrl.tabIndex = 2",ng-class="{active: ctrl.tabIndex == 2}")
+      i.dashboard.icon
+      | Control panel
+
+  //PART 1: USER INFO
+  .ui.blue.menu.vertical.inverted(ng-show="ctrl.tabIndex == 1")
+    a.item.active(href="#")
+      | Contracts
+      i.home.icon
+    .item 
+      i.setting.icon
+      | Settings
+      .menu
+        a.item(href="#") Personal information 
+        a.item(href="#") Email      
+        a.item(href="#") Log
+    .item
+      | Payments
+      i.money.icon
+      .menu
+        a.item(href="#") History
+        a.item(href="#") Payment methods
+
+    a.item(href="#")
+      i.plus.icon
+      | Subscribe a new service
+    a.item(href="#")
+      i.users.icon
+      | Users
+
+  //PART 2: CONTROL PANELS
+  .ui.purple.menu.vertical.inverted(ng-show="ctrl.tabIndex == 2")
+    .item
+      select(ng-model="ctrl.currentCpanel" ng-options="cpanel.code as cpanel.name for cpanel in ctrl.cpanels")    
+      //.ui.selection.dropdown
+        .default.text A0001
+        i.dropdown.icon
+        .menu.transition.hidden(tabindex="-1")
+          .item(ng-repeat="cpanel in ctrl.cpanels",data-value="{{cpanel.code}}") {{cpanel.name}}
+          
+    a.item.active(href="#")
+      i.info.icon
+      | Server info
+    a.item(href="#")
+      i.world.icon
+      | WEB  
+    a.item(href="#")
+      i.exchange.icon
+      | FTP 
+    a.item(href="#")
+      i.database.icon
+      | Databases 
+    a.item(href="#")
+      i.mail.icon
+      | Mail 
+    a.item(href="#")
+      i.folder.open.icon
+      | Shared files
+    a.item(href="#")
+      i.flag.icon
+      | Domains
+    a.item(href="#")
+      i.dropbox.icon
+      | Install software
+    
+  
+  

@@ -1,0 +1,25 @@
+.zenlogic {
+  font-size: 20px;
+}
+.zenlogic-sidebar {
+  width: 300px;
+}
+.zenlogic-sidebar select {
+  color: #333;
+  padding: 2px 5px;
+}
+.zenlogic-sidebar .tabs > .item {
+  width: 150px;
+  font-size: 16px;
+}
+.zenlogic-sidebar .menu {
+  margin: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.ui.menu.zenlogic-menu > .item {
+  background-color: #568eda;
+}
+.ui.menu.zenlogic-menu > .item:hover {
+  background-color: #568eda;
+}
