@@ -1,0 +1,174 @@
+@import "compass/css3";
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+$dark: hsl(0, 0%, 40%);
+$sand: hsl(42, 39%, 94%);
+$green-light: hsl(127, 23%, 84%);
+$green-dark: hsl(159, 19%, 66%);
+$red-light: hsl(3, 100%, 69%);
+$red-dark: hsl(3, 86%, 65%);
+
+* {
+  @include box-sizing(border-box);
+}
+
+html,
+body {
+  height: 100%;
+  font: 1em/1.5 'Lato', sans-serif;
+  background-color: $sand;
+  color: $dark;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+i { font-style: normal; }
+
+// Objects
+[class*='entypo-'] {
+  font-family: 'entypo', sans-serif;
+  font-size: 1.313em;
+}
+
+.ui-module {
+  @include border-radius(5px);
+  white-space: nowrap;
+}
+
+// Components 
+.ui-items {
+  @include translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.app-header {
+  position: relative;
+  padding: 1em 0;
+  margin-bottom: .5rem;
+  background-color: #9E1030;
+  color: $sand;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+}
+
+.app-header__btn {
+  display: inline-block;
+  background-color: #c92c4e;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: .75em 0;
+  width: 3.5em;
+}
+
+.app-header__btn--friends {
+  @include border-radius(5px 0 0 5px);
+  left: 0;
+}
+
+.app-header__btn--edit {
+  @include border-radius(0 5px 5px 0);
+  right: 0;
+}
+
+.menu-selector {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 0;
+  
+  &,
+  li {
+    display: inline-block;
+  }
+  
+  li {
+    position: relative;
+    background-color: #567D6A;
+    padding: 1em 1.5em;
+    list-style: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1em;
+    color: $sand;
+    
+    &:first-child {
+      @include border-radius(5px 0 0 5px);
+    }
+    
+    &:last-child {
+      @include border-radius(0 5px 5px 0);
+    }
+    
+    &:hover,
+    &.js-is-active {
+      background-color: $green-dark;
+    }
+    
+    &.js-is-active:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      display: block;
+      width: 0;
+      height: 0;
+      margin-left: -.5em;
+      border-width: .5em;
+      border-style: solid;
+      border-color: $green-dark transparent transparent transparent;
+    }
+  }
+}
+
+.status {
+  padding: 1em;
+  background-color: #fff;
+}
+
+.status__username,
+.status__text {
+  margin: 0;
+  white-space: normal;
+}
+
+.status__username {
+  font-size: 1em;
+}
+
+.status__text {
+  font-size: .75em;
+}
+
+// Image Replacement
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
