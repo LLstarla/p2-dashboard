@@ -9,25 +9,33 @@ body {
 }
 
 .rss-widget {
-  width: 300px;
-  margin: 0 auto;
+  width: 250px;
+  margin: 0;
 }
   
 .rss-widget ul {
-    margin: 0;
-    padding: 0;
-    text-align: left;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style:none;
+  padding: 1em;
+  margin-bottom: .125em;
+  display: block;
+  list-style: none;
+  text-transform: uppercase;
 }
     
-.rss-widget ul {
-      list-style:none;
-      padding: 1em;
-      margin-bottom: .125em;
-      display: block;
-      list-style: none;
-      text-transform: uppercase;
+a {
+  color: #fff;
 }
-    
+
+li:nth-child(2n) a:hover {
+  color: #2B2525;
+}
+
+li:nth-child(2n+1) a:hover {
+  color: #9E1030;
+}
 
 .rss-widget li:nth-child(2n) {
   background-color: #9E1030; 
@@ -38,19 +46,15 @@ body {
   background-color: #2B2525;
   padding: 10px;
 }
-       
- a {
-        color: white;
-        text-decoration: none;
-        
-        .blog-item-title{
-          font-weight: 900;
-          line-height: 1.2;
-          text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-        }
-        
-        .blog-item-author{
-          font-size: 12px;
-          color: rgba(255,255,255,0.6);
-        }  
-      }
+     
+  
+.blog-item-title a {
+    font-weight: 900;
+    line-height: 1.2;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  }
+  
+.blog-item-author a {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+  }  
