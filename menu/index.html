@@ -18,16 +18,38 @@
 <div ng-app="portal" ng-controller="MainCtrl as ctrl" class="zenlogic-sidebar">
   <!--p {{ctrl.cpanels}}-->
   <!--select(ng-model="ctrl.currentCpanel" ng-options="cpanel.code as cpanel.name for cpanel in ctrl.cpanels")-->
-  <div class="ui labeled icon menu horizontal tabs inverted2"><a href="#" ng-click="ctrl.tabIndex = 1" ng-class="{active: ctrl.tabIndex == 1}" class="blue item"><i class="setting icon"></i>Contracts</a><a href="#" ng-click="ctrl.tabIndex = 2" ng-class="{active: ctrl.tabIndex == 2}" class="purple item"><i class="dashboard icon"></i>Control panel</a></div>
+  <div class="ui labeled icon menu horizontal tabs inverted2"><a href="#" ng-click="ctrl.tabIndex = 1" ng-class="{active: ctrl.tabIndex == 1}" class="blue item"><i class="setting icon"></i>Canvas</a><a href="#" ng-click="ctrl.tabIndex = 2" ng-class="{active: ctrl.tabIndex == 2}" class="purple item"><i class="dashboard icon"></i>Control panel</a></div>
+
   <!--PART 1: USER INFO-->
-  <div ng-show="ctrl.tabIndex == 1" class="ui blue menu vertical inverted"><a href="#" class="item active">Contracts<i class="home icon"></i></a>
-    <div class="item"> <i class="setting icon"></i>Settings
-      <div class="menu"><a href="#" class="item">Personal information </a><a href="#" class="item">Email      </a><a href="#" class="item">Log</a></div>
+  <div ng-show="ctrl.tabIndex == 1" class="ui blue menu vertical inverted">
+
+    <a href="#" class="item active">Web Design<i class="home icon"></i></a>
+
+    <div class="accordion">
+      <i class="setting icon"></i>Drawing II
+        <div class="menu">
+          <a href="#" class="item">Personal information</a>
+          <a href="#" class="item">Email</a>
+          <a href="#" class="item">Log</a>
+        </div>
     </div>
+
     <div class="item">Payments<i class="money icon"></i>
-      <div class="menu"><a href="#" class="item">History</a><a href="#" class="item">Payment methods</a></div>
-    </div><a href="#" class="item"><i class="plus icon"></i>Subscribe a new service</a><a href="#" class="item"><i class="users icon"></i>Users</a>
-  </div>
+
+    <div class="menu">
+      <a href="#" class="item">History</a>
+      <a href="#" class="item">Payment methods</a>
+    </div>
+
+    </div>
+      <a href="#" class="item"><i class="plus icon"></i>Subscribe a new service</a>
+      <a href="#" class="item"><i class="users icon"></i>Users</a>
+    </div>
+
+
+
+
+
   <!--PART 2: CONTROL PANELS-->
   <div ng-show="ctrl.tabIndex == 2" class="ui purple menu vertical inverted">
     <div class="item">
